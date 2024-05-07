@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
+    <style>
+        * {margin:0;  padding:0;}
+        #box{
+            left: 200px;
+            top: 100px;
+            width:50;
+            height:100px;
+            position:absolute;
+            animation-timing-function: linear;
+            background-color: rgb(157, 157, 236); 
+            animation-name:rotate;
+            
+            animation-duration:2s; 
+            animation-iteration-count:infinite;
+        }
+        
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg)  translateX(100px) rotate(-0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(100px) rotate(-360deg);
+            }
+
+        }
+    </style>
+            
+    <title>水平移動</title>
+</head>
+
+
+<body >
+    <div id="box">Hello world!</div>
+</body>
+
+</html>
