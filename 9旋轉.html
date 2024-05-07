@@ -14,17 +14,24 @@
           position:absolute;
           animation-timing-function: linear;
           background-color:#ccddee;  
-          animation-name:movingmox;
+          animation-name:rotate;
           animation-duration:5s; 
           animation-iteration-count:infinite;
         }
         
-        @keyframes movingmox{
-            0%,100%{
+        @keyframes rotate{
+            0%{
                 left:0;
+                transform: rotate(0deg);
+            }
+            100%{
+                left:0;
+                transform: rotate(-360deg);
             }
             50%{
+                
                 left:calc(100% - 100px);
+                transform: rotate(360deg);
             }
         }
     </style>
