@@ -6,46 +6,22 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
-    <title>表格</title>
-    <style>
-        * {margin: 0px;padding: 0px}
-        #mytable {
-        width: 100%;         /*同螢幕寬*/
-        text-align: center  /*文字置中*/
-        }
-        
-        #mytable thead {
-        background-color: rgb(125, 125, 219);  /*表頭底色淡藍*/
-        font-weight:bold              /*粗體*/
-        }
-        
-        #mytable tbody tr:nth-child(even) {
-        background-color: #c2c0c0    /*偶數灰底*/
-        }
-        
-        #mytable tfoot {
-        background-color: rgb(223, 134, 134)     /*表尾底色淡綠*/
-        }
-        #mytable th,td {  
-        padding: 5px     /*內填充5px*/
-        }
-        #mytable tbody tr:hover{       /*滑鼠滑過時*/
-        cursor:pointer;                        /*游標變手掌*/
-        background-color:yellow      /*row底色改黃色*/
-        }
-        #mytable tbody tr td:nth-child(n+8):nth-child(-n+11){      /*第8欄右邊框線*/
-            color:orange;         /*橘色字*/
-            font-weight:bold   /*粗體*/
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
 
-        }
-    </style>
-
+    <title>3Datatabel</title>
     
 </head>
 <p></p>
 
 <body>
-    <table id='mytable'>
+    <table id="mytable" class="table table-striped nowrap" style="width:100%">
         <thead>
             <tr>
                 <th>電號</th>
@@ -151,6 +127,11 @@
 
         </tfoot>        
     </table>
+    <script>
+        new DataTable('#mytable', {
+            responsive: true
+        });  
+    </script>
 </body>
 
 </html>
