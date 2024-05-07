@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
+    <title>表格</title>
+    <style>
+        * {margin: 0px;padding: 0px}
+        #mytable {
+        width: 100%;         /*同螢幕寬*/
+        text-align: center  /*文字置中*/
+        }
+        
+        #mytable thead {
+        background-color: rgb(125, 125, 219);  /*表頭底色淡藍*/
+        font-weight:bold              /*粗體*/
+        }
+        
+        #mytable tbody tr:nth-child(even) {
+        background-color: #c2c0c0    /*偶數灰底*/
+        }
+        
+        #mytable tfoot {
+        background-color: rgb(223, 134, 134)     /*表尾底色淡綠*/
+        }
+        #mytable th,td {  
+        padding: 5px     /*內填充5px*/
+        }
+        #mytable tbody tr:hover{       /*滑鼠滑過時*/
+        cursor:pointer;                        /*游標變手掌*/
+        background-color:yellow      /*row底色改黃色*/
+        }
+    </style>
+
+    
+</head>
+<p></p>
+
+<body>
+    <table id='mytable'>
+        <thead>
+            <tr>
+                <th>電號</th>
+                <th>戶名</th>
+                <th>1月</th>
+                <th>2月</th>
+                <th>3月</th>
+                <th>4月</th>
+                <th>5月</th>
+                <th>6月</th>
+                <th>7月</th>
+                <th>8月</th>
+                <th>9月</th>
+                <th>10月</th>
+                <th>11月</th>
+                <th>12月</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>04123456789</td>
+                <td>熊大</td>
+                <td>10</td>
+                <td>20</td>
+                <td>5</td>
+                <td>40</td>
+                <td>50</td>
+                <td>60</td>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+                <td>90</td>
+                <td>60</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>00123456789</td>
+                <td>張三</td>
+                <td>10</td>
+                <td>25</td>
+                <td>25</td>
+                <td>30</td>
+                <td>45</td>
+                <td>55</td>
+                <td>60</td>
+                <td>65</td>
+                <td>65</td>
+                <td>60</td>
+                <td>35</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>01123456789</td>
+                <td>李四</td>
+                <td>20</td>
+                <td>10</td>
+                <td>15</td>
+                <td>50</td>
+                <td>60</td>
+                <td>120</td>
+                <td>180</td>
+                <td>200</td>
+                <td>210</td>
+                <td>220</td>
+                <td>160</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>02123456789</td>
+                <td>王五</td>
+                <td>6</td>
+                <td>8</td>
+                <td>23</td>
+                <td>33</td>
+                <td>30</td>
+                <td>35</td>
+                <td>40</td>
+                <td>50</td>
+                <td>45</td>
+                <td>30</td>
+                <td>20</td>
+                <td>10</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">總和</td>
+                <td>46</td>
+                <td>63</td>
+                <td>68</td>
+                <td>153</td>
+                <td>185</td>
+                <td>270</td>
+                <td>350</td>
+                <td>395</td>
+                <td>410</td>
+                <td>400</td>
+                <td>275</td>
+                <td>110</td>
+            </tr>
+
+        </tfoot>        
+    </table>
+</body>
+
+</html>
