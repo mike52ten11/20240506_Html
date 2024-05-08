@@ -6,25 +6,197 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
 
+        #scene {
+            width: 100%;
+            height: 800px;
+            overflow: hidden
+        }
+
+        .layer {
+            display: block;
+            height: 101%;
+            width: 101%;
+        }
+
+        .background {
+            background: url(image/background.png) no-repeat 50% 100%;
+            bottom: 0px;
+            background-size: cover;
+            position: absolute;
+            width: 110%;
+            left: -5%;
+            top: -5%;
+        }
+
+        .building {
+            background-image: url(image/building.png);
+            background-repeat: no-repeat;
+            bottom: 275px;
+            position: absolute;
+            left: 60%;
+            margin: 0px 15px;
+            background-size: auto auto;
+            height: 124px;
+            width: 84px;
+            background-size: contain;
+        }
+
+        .fan {
+            background-image: url(image/fan.png);
+            background-repeat: no-repeat;
+            bottom: 60px;
+            position: absolute;
+            left: 20%;
+            margin: 0px -110px;
+            background-size: auto auto;
+            height: 695px;
+            width: 239px;
+            background-size: contain;
+            animation-name: swing;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 11s;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(0.3deg);
+                transform-origin: bottom center;
+            }
+
+            50% {
+                transform: rotate(-0.5deg);
+                transform-origin: bottom center;
+            }
+        }
+
+
+        .shadow {
+            background-image: url(image/shadow.png);
+            background-repeat: no-repeat;
+            bottom: 60px;
+            position: absolute;
+            left: 20%;
+            margin: 0px -300px;
+            background-size: auto auto;
+            height: 96px;
+            width: 353px;
+            background-size: contain;
+            opacity: 0.6
+        }
+
+        .bird {
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: auto auto;
+            background-size: contain;
+            margin: 0px 15px;
             
+            animation-name: bird_rotate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;            
+        }
+        @keyframes bird_rotate{
+
+            30%{
+                left:30%;
+                transform: rotate(0deg) scale(0.5);
+                
+            }
+
+            50%{
+                
+                left:calc(100% - 100px);
+                transform: rotate(60deg) scale(2);
+            }
+       
+        }
+        .bird1 {
+            background-image: url(image/bird1.png);
+            bottom: 650px;
+            left: 85%;
+            height: 44px;
+            width: 32px;
+        }
+
+        .bird2 {
+            background-image: url(image/bird2.png);
+            bottom: 640px;
+            left: 81%;
+            height: 42px;
+            width: 66px;
+        }
+
+        .bird3 {
+            background-image: url(image/bird3.png);
+            bottom: 600px;
+            left: 80%;
+            height: 36px;
+            width: 48px;
+        }
+
+        .bird4 {
+            background-image: url(image/bird4.png);
+            bottom: 550px;
+            left: 75%;
+            height: 88px;
+            width: 64px;
+        }
+
+    </style>
+    <script src="js/parallax.min.js"></script>
+
+
     <title>parallax 視差特效</title>
 </head>
 
 
-<body >
+<body>
     <div id="scene">
-        <div data-depth="0.05" class='layer'><div class="background"></div></div>
-        <div data-depth="0.07" class='layer'><div class="building"></div></div>
-        <div data-depth="0.1"  class='layer'><div class="bird bird1"></div></div>
-        <div data-depth="0.135"class='layer'><div class="bird bird2"></div></div>
-        <div data-depth="0.165"class='layer'><div class="bird bird3"></div></div>   
-        <div data-depth="0.17"  class='layer'><div class="shadow"></div></div>  
-        <div data-depth="0.2"  class='layer'><div class="fan"></div></div>
-        <div data-depth="0.25" class='layer'><div class="bird bird4"></div></div>
-      
-      </div>  
-    
+        <div data-depth="0.05" class='layer'>
+            <div class="background"></div>
+        </div>
+        <div data-depth="0.07" class='layer'>
+            <div class="building"></div>
+        </div>
+        <div data-depth="0.2" class='layer'>
+            <div class="fan"></div>
+        </div>
+        <div data-depth="0.1" class='layer'>
+            <div class="bird bird1"></div>
+        </div>
+        <div data-depth="0.135" class='layer'>
+            <div class="bird bird2"></div>
+        </div>
+        <div data-depth="0.165" class='layer'>
+            <div class="bird bird3"></div>
+        </div>
+        <div data-depth="0.17" class='layer'>
+            <div class="shadow"></div>
+        </div>
+
+        <div data-depth="0.25" class='layer'>
+            <div class="bird bird4"></div>
+        </div>
+
+    </div>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene, {
+            relativeInput: true
+        });
+    </script>
+
 </body>
 
 </html>
