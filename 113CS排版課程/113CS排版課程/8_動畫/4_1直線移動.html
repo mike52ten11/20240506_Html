@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
+    <title>animation直線移動</title>
+
+<style>
+html,body{
+  margin:0;
+  padding:0;
+}
+#box{
+  width:100px;
+  height:100px;
+  position:absolute;
+  background-color:#ccddee;  
+  animation-name:movingmox;
+  animation-duration:10s; 
+  animation-iteration-count:infinite;
+}
+
+@keyframes movingmox{
+    0%,100%{
+        left:0;
+    }
+    50%{
+        left:calc(100% - 100px);
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <div id='box'>
+      Hi
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #f1f1f1;
+            font-family: Microsoft JhengHei;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mySwiper {
+            max-width: 900px;
+            max-height: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a
+                    href="https://www.taipower.com.tw/tc/topic/2023_sps/index.html?utm_source=tpcwww&utm_medium=banner&utm_campaign=tpcwww_home_main_banner1"
+                    target="_blank"><img src="image/31.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a
+                    href="https://www.taipower.com.tw/tc/page.aspx?mid=337&cid=2662&cchk=c7c39fc4-e0a3-4df9-8b3e-cfb0e864cda1"
+                    target="_blank"><img src="image/32.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=nq4L_39NDG" target="_blank"><img
+                        src="image/33.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a
+                    href="https://www.taipower.com.tw/tc/topic/2022_hhpp/index.html?utm_source=tpcwww&utm_medium=banner&utm_campaign=tpcwww_home_main_banner5"
+                    target="_blank"><img src="image/34.jpg" alt=""></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

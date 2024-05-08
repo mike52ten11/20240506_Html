@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>水平排列</title>
+
+<style>
+ *{margin:0;padding:0}
+
+    
+ body{
+   background-color: #e8eaeb;
+ }
+ 		
+ #hbox{
+   max-width:1000px;
+   display:flex;
+   margin: 0 auto;
+ }
+
+ #hbox>div{
+   display:flex;
+   flex:1; 
+   overflow:hidden;
+   padding: 15px 0px; 
+ }
+
+ #hbox>div:not(:last-child){
+   padding-right: 7.5px; 
+ }
+ #hbox>div:not(:first-child){
+   padding-left: 7.5px; 
+ }
+
+ #hbox>div a{
+   background: #fff;         
+   display: block; 
+   width: 100%;
+   text-decoration: none;
+ }
+
+ #hbox>div a:hover{
+   cursor:pointer; 
+   box-shadow: 0px 0px 10px #b5b5b5; 
+ }
+
+ #hbox>div img{
+   width: 100%;
+   vertical-align: bottom;
+ }
+
+ #hbox>div p{
+   padding: 10px; 
+   color: gray; 
+ }
+</style>
+
+</head>
+<body>
+	<div id='hbox'>
+		<div>
+                	<a href='https://d102ccsweb.taipower.com.tw/Webhook/?eservice=TPCWEB' target='_blank'>
+				<img src='image/1.jpg'/>
+				<p>智能客服</p>
+			</a>
+		</div>
+		<div>
+                	<a>
+				<img src='image/2.jpg'/>
+				<p>電力交易平台</p>
+			</a>
+		</div>
+		<div>
+                	<a>
+				<img src='image/3.jpg'/>
+				<p>AMI智慧電表資訊網</p>
+			</a>
+		</div>
+		<div>
+                	<a>
+				<img src='image/4.jpg'/>
+				<p>ADR自動需量反應平台</p>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

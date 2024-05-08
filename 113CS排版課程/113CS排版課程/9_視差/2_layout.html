@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>視差</title>
+
+
+<style>
+
+body{margin:0;padding:0}
+#scene{width:100%;height:800px;overflow:hidden}
+
+.layer{
+    display: block;
+    height: 101%;
+    width: 101%;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background: url(image/background.png) no-repeat 50% 100%;
+    bottom: 0px;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+}
+
+</style>
+</head>
+<body>
+<div id="scene">
+  <div class='layer'><div class="background"></div></div>
+  <div class='layer'><div class="building"></div></div>
+  <div class='layer'><div class="bird bird1"></div></div>
+  <div class='layer'><div class="bird bird2"></div></div>
+  <div class='layer'><div class="bird bird3"></div></div>   
+  <div class='layer'><div class="shadow"></div></div>  
+  <div class='layer'><div class="fan"></div></div>
+  <div class='layer'><div class="bird bird4"></div></div>
+</div>
+</body>
+</html>

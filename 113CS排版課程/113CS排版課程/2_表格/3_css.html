@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>表格</title>
+
+<style>
+*{
+  margin:0px;
+  padding:0px
+}
+
+#mytable{
+  width:100%;        /*同螢幕寬*/
+  text-align:center  /*文字置中*/
+}
+
+#mytable thead{
+  background-color:#cde; /*表頭底色淡藍*/
+  font-weight:bold;      /*粗體*/
+}
+
+#mytable tbody tr:nth-child(even){
+  background-color:#ebebeb   /*偶數灰底*/
+}
+
+#mytable tbody tr td:nth-child(n+8):nth-child(-n+11){
+  color:orange;font-weight:bold   /*8至11粗體橘色字*/
+}
+
+#mytable tfoot tr td:nth-child(n+7):nth-child(-n+10){
+  color:orange;font-weight:bold
+}
+
+#mytable tbody tr:hover{       /*滑鼠滑過時*/
+  cursor:pointer;           /*滑鼠手掌*/
+  background-color:yellow   /*row底色黃色*/
+}
+
+#mytable tfoot{
+  background-color:#dec   /*表尾底色淡綠*/
+}
+
+#mytable th,td{
+  padding:5px   /*內填充5px*/
+}
+</style>
+</head>
+<body>
+	<div>
+	   <table id='mytable'>
+	      <thead>
+                  <tr>
+                     <th>電號</th><th>戶名</th><th>1月</th><th>2月</th><th>3月</th><th>4月</th><th>5月</th><th>6月</th><th>7月</th><th>8月</th><th>9月</th><th>10月</th><th>11月</th><th>12月</th></th>
+                  </tr>
+              </thead>
+              <tbody>
+                     <tr><td>04123456789</td><td>熊大</td><td>10</td><td>20</td> <td>30</td> <td>40</td> <td>80</td><td>100</td><td>200</td><td>200</td><td>200</td><td>200</td><td>100</td> <td>30</td></td></tr>
+                     <tr><td>00123456789</td><td>張三</td><td>10</td><td>20</td> <td>30</td> <td>40</td> <td>80</td><td>100</td><td>200</td><td>200</td><td>200</td><td>200</td><td>100</td> <td>30</td></td></tr>
+                     <tr><td>01123456789</td><td>李四</td><td>10</td><td>20</td> <td>30</td> <td>40</td> <td>80</td><td>100</td><td>200</td><td>200</td><td>200</td><td>200</td><td>100</td> <td>30</td></td></tr>
+                     <tr><td>02123456789</td><td>王五</td><td>10</td><td>20</td> <td>30</td> <td>40</td> <td>80</td><td>100</td><td>200</td><td>200</td><td>200</td><td>200</td><td>100</td> <td>30</td></td></tr>                     
+	      </tbody>
+	      <tfoot>
+                     <tr>        <td colspan='2'>總結</td><td>40</td><td>80</td><td>120</td><td>160</td><td>320</td><td>400</td><td>800</td><td>800</td><td>800</td><td>800</td><td>400</td><td>120</td></td></tr>
+              </tfoot>
+           </table>
+	</div>
+</body>
+</html>
