@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
+    <style>
+        * {margin:0;  padding:0;}
+        #box{
+            animation-name:rotate;
+            animation-duration:3s; 
+        }
+        
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg)  translateX(50px) rotate(-0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(50px) rotate(-360deg);
+            }
+
+        }
+        #box1{             
+            animation-name:rotate1;
+            animation-duration:2s; 
+        }
+        
+  
+        @keyframes rotate1{
+            0%{
+                transform: rotate(0deg)  translateX(20px) rotate(-0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(20px) rotate(-360deg);
+            }
+
+        }           
+        #wrapper{
+            top: 250px;
+            width: 100%;     
+            height: 500px;
+            overflow: hidden;
+            
+            position: relative;
+            
+            }
+        #wrapper>div{
+            left: -100px;
+            top: 250px;
+            width:2400px;
+            height:320px;
+            position:absolute;
+            animation-timing-function: linear;            
+            background-image: url("image/wave-plain.png");
+            animation-iteration-count:infinite;
+            background-repeat: repeat-x;
+
+        }    
+
+    </style>
+            
+    <title>水平移動</title>
+</head>
+
+
+<body >
+    <div id="wrapper">
+        <div id="box1"> 
+
+        </div>  
+        <div id="box">
+            
+        </div>
+       
+    </div>    
+    
+</body>
+
+</html>
