@@ -6,9 +6,34 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+    
     <title>九大秘境</title>
+    <style>
+        .va {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer {
+            text-align: center;
+        }
+        .container>div{
+            margin-bottom:20px
+        }
+
+        .hbox{
+             cursor:pointer;
+			 box-shadow: 0px 0px 10px #b5b5b5;	 
+         }
+    </style>
+        
 </head>
 <p></p>
 
@@ -27,84 +52,133 @@
 
             <div id="navbarSupportedContent" class="collapse navbar-collapse  ms-3">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">九大秘境</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">貼心服務</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secret">九大秘境</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reg">貼心服務</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">智能克服</a></li>
                 </ul>
             </div>
         </nav>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="image/91.jpg" class="d-block w-100" alt="說明A"></div>
+                <div class="carousel-item"><img src="image/92.jpg" class="d-block w-100" alt="說明B"></div>
+                <div class="carousel-item"><img src="image/93.jpg" class="d-block w-100" alt="說明C"></div>
+                <div class="carousel-item"><img src="image/94.jpg" class="d-block w-100" alt="說明D"></div>
+                <div class="carousel-item"><img src="image/95.jpg" class="d-block w-100" alt="說明E"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
         <div id="secret">
             <h1><b>九大秘境</b></h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/51.jpg" alt="老梅綠石槽">
-                        <div class="card-body">
-                            <h6 class="card-title">老梅綠石槽 @ 新北 石門</h6>
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img  class="card-img-top hbox" src="image/馬丘比丘.png" alt="祕魯 馬丘比丘">
+                        </a> 
+                        <div class="card-body">                      
+                            <h6 class="card-title">被稱為“空中城市”的馬丘比丘位於秘魯南部安地斯山脈、海拔約2430米，1911年由一位美國青年在原住民嚮導的幫助下從熱帶原始森林中找到了這座南美最大的印加帝國遺址，並向世界揭開了它的秘密!馬丘比丘有著壯觀的迷人景色，遺址的魅力在於巧妙地利用山根和地面凸凹不平的地勢，與石頭結構的城寨達到了自然與建築融合的完美協調。並在1983年被認定為世界遺產，至今仍為各式電影MV所受歡迎的拍攝場景與旅遊勝地!</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/52.jpg" alt="嘉明湖">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            
+                        </a>
+                        <img class="card-img-top" src="image/吳哥遺址.png" alt="吳哥遺址">
                         <div class="card-body">
-                            <h6 class="card-title">「天使的眼淚」嘉明湖 @ 台東 海端</h6>
+                            <h6 class="card-title">奉獻給印度教守護神毗濕奴的吳哥遺址坐落在盤根錯節的柬埔寨叢林中，這裡保留有從9世紀到15世紀時高棉帝國首都的遺跡，而遺址中最著名的風景便是「吳哥的微笑」。塔廟高低林立、層次井然，青灰砂岩上苔痕斑斑，四面綻放著佛陀的微笑面容、祥和而沉靜，毋需隻字片語便道盡數百年來的滄桑風景。同時吳哥遺址於1992年宣布列入世界文化遺產，因先前戰爭造成的破壞與竊盜使國際修繕團隊進駐吳哥遺址，至今仍持續修護中。</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/53.jpg" alt="阿里山隙頂">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/大堡礁.png" alt="大堡礁">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">阿里山隙頂 @ 嘉義 阿里山</h6>
+                            <h6 class="card-title">大堡礁位於昆士蘭海岸外，是世界上最大的珊瑚礁系統。由2900多個單獨的珊瑚礁和900個島嶼組成，其綿延2600多公里、在太空中都可以看到。許多人會搭著遊船欣賞著船下連綿不斷、多形多彩的珊瑚景色，成為世界各地遊客來獵奇觀賞的最佳海底奇觀。因其造就了豐富的生物多樣性，而在1981年被列入世界自然遺產名錄，也曾被CNN選為世界七大自然奇觀。但從1985年開始到現在，脆弱的生態系統已經失去了一半珊瑚，包括氣候變化導致水溫上升、引起珊瑚白化死亡甚至是環境污染等問題，除了欣賞大自然的不可思議外更應該正視這些環境議題!</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/54.jpg" alt="「天空之城」十三層遺址">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/冰河國家公園.png" alt="冰河國家公園">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">「天空之城」十三層遺址 @ 新北 九份</h6>
+                            <h6 class="card-title">這個風景如畫的南部巴塔哥尼亞公園包圍著南極洲外層最大的冰雪地幔、與智利接壤，是世界上觀察冰川活動最佳境地。冰河國家公園有多條大的冰河，其中，將阿根廷湖隔開成兩半的莫雷諾冰河最為壯觀。Perito Mereno擁有著漂亮的藍色冰塊，是阿根廷最受歡迎的旅遊勝地之一。遊客們可以從阿根廷湖上的小船或陸地上的三個觀景區觀看冰川。莫雷諾冰河目前還在不斷生成，每天都向常溫地帶推進30厘米。然而，由於氣候暖化的影響和冰舌推進至湖面的常溫地帶，導致冰河的融化速率逐漸加快，時常發生冰河崩塌的現象，因此可以聽到冰塊落入湖中的震撼轟隆聲</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/55.jpg" alt="栗松溫泉">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/黃石國家公園.png" alt="黃石國家公園">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">栗松溫泉 @ 台東 海端</h6>
+                            <h6 class="card-title">黃石國家公園位於美國懷俄明州，是《國家地理》雜誌評選出的「死前必去」的景點之一，作為世界上面積最大的國家公園，更是世界國家公園的代表！黃石國家公園成立於1872年，公園有廣闊的地熱能區，有許多溫泉和間歇泉。</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/56.jpg" alt="鷹石尖">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/加拉巴哥群島.png" alt="加拉巴哥群島">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">鷹石尖 @ 宜蘭 頭城</h6>
+                            <h6 class="card-title">加拉帕戈斯群島及其周圍海域是國家公園和生物海洋保護區，這些島嶼因其大量的特有物種而聞名於世，因此被稱為「世界最大的自然博物館」。並且啟發達爾文，使他對物種的真正起源重新深思，對於日後撰寫自然進化論提供了很大的幫助。
+
+                            </h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/57.jpg" alt="能高安東軍">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/克久拉霍古蹟.png" alt="克久拉霍古蹟">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">能高安東軍 @ 南投 花蓮</h6>
+                            <h6 class="card-title">克久拉霍位於印度中央邦北部的本德爾坎德，建於公元950年一百年期間，直至19世紀才再次重現世人的目光下。印度的性愛雕塑中最能引起人們興趣的地方在於它與宗教有著非常緊密的聯繫，所以是完全公開的。任何一個走近克久拉霍神廟的人都會立即注意到對神和人的性活動的頌揚是其建造者的信仰體系的核心。巨大塔樓的外表裝飾著石制的神祇雕像，雕刻的手法精湛、栩栩如生，極其生動的反映了印度教對人類本性的寬容與豁達。克久拉霍古蹟組群於1986年被列入世界文化遺產，也是世界文化遺產中較具特色的地方。</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/58.jpg" alt="忘憂森林">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/伊瓜蘇國家公園.png" alt="伊瓜蘇國家公園">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">忘憂森林 @ 南投 竹山</h6>
+                            <h6 class="card-title">伊瓜蘇大瀑布位於阿根廷和巴西交界處，是世界三大瀑布之一，壯觀的瀑布形成了直徑近300米、高80米的阿根廷和巴西的半圓形邊界，是一個來到南美洲大家最不能錯過的景點、也是「世界新七大自然奇景」之一!這裡有著豐富的野生動物：彩翼蝴蝶、凱門鱷、美洲虎及長鼻浣熊，與瀑布和亞熱帶雨林交相輝映，形成了和諧寧靜的大自然氛圍，天氣好時隨時都能看到耀眼的彩虹。而其中“惡魔的喉嚨 Devil’s Throat”是最令人驚嘆的景點，不僅是整個伊瓜蘇中最大的瀑布、也是分開阿根廷與巴西國界的峽谷，連前美國總統夫人都對此讚不絕口呢!
+
+                            </h6>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img class="card-img-top" src="image/59.jpg" alt="高美濕地">
+                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
+                            <img class="card-img-top" src="image/吉薩金字塔群.png" alt="埃及 吉薩金字塔群">
+                        </a>
+                        
                         <div class="card-body">
-                            <h6 class="card-title">高美濕地 @ 台中 清水</h6>
+                            <h6 class="card-title">吉薩金字塔群是指一大片位在埃及開羅郊區的吉薩高原內之陵墓群，於1979年登入聯合國教科文組織世界遺產，同時也是「世界新七大奇蹟」之一。陵墓群建於埃及第四王朝，主要由三個金字塔組成，距今已有四千五百多年的歷史。而當中最大的是胡夫金字塔，同時也是古代世界七大奇蹟中最古老及唯一尚存的建築物，現在旁邊還設立了太陽船博物館。除了金字塔外還有雄偉壯觀的獅身人面像，為考古學家一窺世界上最引人入勝的文明提供了機會、也是探訪埃及古文明的最佳去處，到了那裏千灣不要忘記順道騎乘駱駝體驗當地文化喔!</h6>
                         </div>
                     </div>
                 </div>
@@ -117,26 +191,57 @@
 
         </div>
         <div id="reg" class='row row-cols-1 row-cols-sm-1 row-cols-md-2 text-center'>
-            <div class="col">
+            <div class="col va" >
                 <h1><b>貼心服務</b></h1>
                 <h4>請填寫資料，我們樂意為您服務</h4><br>
             </div>
             <div class="col">
                 <form action="#" method="post">
-                    <input type="text" id="usr_name" placeholder="姓名" />
-                    <input type="radio" id="usr_male" name="usr_gender" value="male" checked /> 先生
-                    <input type="radio" id="usr_female" name="usr_gender" value="female" /> 小姐
-                    <input type="email" id="usr_email" placeholder="電子信箱" />
-                    <input type="text" id="usr_phone" placeholder="聯絡電話" />
-                    <textarea id="usr_note" rows="3" placeholder="備註"></textarea>
-                    <input type="submit" value="請聯絡我" />
+                    <div class='row mb-3'>
+                        <div class='col-7'>
+                            <input type="text" id="usr_name" placeholder="姓名" class='form-control' />
+                        </div>
+                        <div class='col-5 va'>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="usr_gender" id="usr_male" value="option1" checked>
+                                <label class="form-check-label" for="usr_male">先生</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="usr_gender" id="usr_female" value="option2">
+                                <label class="form-check-label" for="usr_female">小姐</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class='row row-cols-1 row-cols-sm-1 row-cols-md-2 mb-3'>
+                        <div class='col'>
+                            <input type="email" id="usr_email" class='form-control' placeholder="電子信箱" />
+                        </div>
+                        <div class='col'>
+                            <input type="text" id="usr_phone" class='form-control' placeholder="聯絡電話" />
+                        </div>
+                    </div>
+                    <div class='row mb-3'>
+                        <div class='col'>
+                            <textarea id="usr_note" rows="3" class='form-control' placeholder="備註"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class='btn btn-info' value="請聯絡我" />
                 </form>
+
             </div>
         </div>
 
-        <footer>
-            <p>Copyright &copy; 2021 iPower Travel Inc. All rights reserved.</p>
+
+
+
+        <footer class="row justify-content-center">
+            <div>
+                <a href="#"><span class="material-icons">expand_less</span></a>
+                <p>Copyright &copy; 2021 iPower Travel Inc. All rights reserved.</p>
+            </div>
         </footer>
+
 
     </div>
 
