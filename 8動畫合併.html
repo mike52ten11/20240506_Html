@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shirnk-to-fit=no" />
+    <style>
+        * {margin:0;  padding:0;}
+        #wave{
+            animation-name:rotate;
+            animation-duration:3s; 
+        }
+        
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg)  translateX(50px) rotate(-0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(50px) rotate(-360deg);
+            }
+
+        }
+        #wave1{             
+            animation-name:rotate1;
+            animation-duration:2s; 
+        }
+        
+  
+        @keyframes rotate1{
+            0%{
+                transform: rotate(0deg)  translateX(20px) rotate(-0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(20px) rotate(-360deg);
+            }
+
+        }           
+        #wrapper{
+            top: 10px;
+            width: 100%;     
+            height: 700px;
+            overflow: hidden;
+            
+            position: relative;
+            
+            }
+        #wave,#wave1{
+            left: -100px;
+            top: 400px;
+            width:2400px;
+            height:320px;
+            position:absolute;
+            animation-timing-function: linear;            
+            background-image: url("image/wave-plain.png");
+            animation-iteration-count:infinite;
+            background-repeat: repeat-x;
+
+        }    
+        #cloud {
+            top: -10px;
+            left: 200px;
+            width: 280px;
+            height: 280px;
+            position: absolute;
+            background-image: url("image/board-cloud-2.png");       
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+            animation-name: cloud_swing;
+            animation-duration: 3s;
+            background-repeat: no-repeat;
+        }       
+
+        @keyframes cloud_swing {
+
+            0%,100% {
+                transform: rotate(30deg);
+                transform-origin: top center;
+            }
+
+            50% {
+                transform: rotate(-30deg);
+                transform-origin: top center;
+            }
+        }
+        #lighthouse {
+            top: 320px;
+            left: 900px;
+            width: 160px;
+            height: 280px;
+            position: absolute;
+            background-image: url("image/lighthouse.png");       
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            background-size: 160px 280px;
+            animation-name: lighthouse_swing;
+            animation-duration: 3s;
+            background-repeat: no-repeat;
+        }       
+        @media only screen and (min-width: 1200px) {
+            #lighthouse {
+                left: 1200px;  
+            }
+        }
+        @media only screen and (min-width: 500px) {
+            #lighthouse {
+                left: 500px;  
+            }
+        }
+        @media only screen and (min-width: 200px) {
+            #lighthouse {
+                left: 100px;  
+            }
+        }        
+        @keyframes lighthouse_swing {
+
+            0%,100% {
+                transform: rotate(15deg);
+                transform-origin: bottom center;
+            }
+
+            50% {
+                transform: rotate(-15deg);
+                transform-origin: bottom center;
+            }
+        }
+
+
+    </style>
+            
+    <title>水平移動</title>
+</head>
+
+
+<body >
+    <div id="wrapper">
+        <div id="cloud">
+
+        </div>     
+   
+        <div id="wave1"> 
+
+        </div>  
+        <div id="lighthouse">
+
+        </div> 
+        <div id="wave">
+            
+        </div>
+       
+    </div>    
+    
+</body>
+
+</html>
