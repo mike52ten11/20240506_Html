@@ -12,8 +12,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">
     </script>
-    
-    <title>九大秘境</title>
+
+    <title>世界九大景點</title>
     <style>
         .va {
             display: flex;
@@ -32,6 +32,39 @@
              cursor:pointer;
 			 box-shadow: 0px 0px 10px #b5b5b5;	 
          }
+         .box-shadow{
+            -webkit-box-shadow: 0 1px 1px rgba(72,78,85,.6);
+            box-shadow: 0 1px 1px rgba(72,78,85,.6);
+            -webkit-transition: all .2s ease-out;
+            -moz-transition: all .2s ease-out;
+            -ms-transition: all .2s ease-out;
+            -o-transition: all .2s ease-out;
+            transition: all .2s ease-out;
+        }
+
+        .box-shadow:hover{
+            -webkit-box-shadow: 0 20px 40px rgba(72,78,85,.6);
+            box-shadow: 0 20px 40px rgba(72,78,85,.6);
+            -webkit-transform: translateY(-15px);
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -o-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }    
+        .box-shadow:hover .content{
+            display: block;
+            position: absolute;
+            top: -45px;
+            left: 0;
+            color: #fff;
+            font-size: .8em;
+            background: #346e7a;
+            padding: 5px;
+            border-radius: 5px;
+        }     
+        .content {
+        display: none;
+        }
     </style>
         
 </head>
@@ -52,7 +85,7 @@
 
             <div id="navbarSupportedContent" class="collapse navbar-collapse  ms-3">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#secret">九大秘境</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#secret">世界九大景點</a></li>
                     <li class="nav-item"><a class="nav-link" href="#reg">貼心服務</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">智能克服</a></li>
                 </ul>
@@ -78,13 +111,19 @@
         </div>
         
         <div id="secret">
-            <h1><b>九大秘境</b></h1>
+            <h1><b>世界九大景點</b></h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card">
-                        <a target='_blank' href='https://today-obs.line-scdn.net/0h0Yah-hkEb3ZcEUSkSO0QIWZHbBlvfXx1OCc-dR9_MUIkciwgaCdzQ3BDMBN1JCgoMiMlEngYdEchdiglYX9z/w1200'>
-                            <img  class="card-img-top hbox" src="image/馬丘比丘.png" alt="祕魯 馬丘比丘">
-                        </a> 
+                    <div class="card  ">
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0h0Yah-hkEb3ZcEUSkSO0QIWZHbBlvfXx1OCc-dR9_MUIkciwgaCdzQ3BDMBN1JCgoMiMlEngYdEchdiglYX9z/w1200'>
+                                <img  class="card-img-top box-shadow hbox" src="image/馬丘比丘.png" alt="祕魯 馬丘比丘">
+                                <div class="content">
+                                    祕魯 馬丘比丘
+                                </div>
+                            </a> 
+                        </div>
+
                         <div class="card-body">                      
                             <h6 class="card-title">被稱為“空中城市”的馬丘比丘位於秘魯南部安地斯山脈、海拔約2430米，1911年由一位美國青年在原住民嚮導的幫助下從熱帶原始森林中找到了這座南美最大的印加帝國遺址，並向世界揭開了它的秘密!馬丘比丘有著壯觀的迷人景色，遺址的魅力在於巧妙地利用山根和地面凸凹不平的地勢，與石頭結構的城寨達到了自然與建築融合的完美協調。並在1983年被認定為世界遺產，至今仍為各式電影MV所受歡迎的拍攝場景與旅遊勝地!</h6>
                         </div>
@@ -92,10 +131,16 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            
-                        </a>
-                        <img class="card-img-top" src="image/吳哥遺址.png" alt="吳哥遺址">
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hb-Cet_OmPQJ-HBbQatxCVURKPm1NcC4BGipsAT1yYzYGf35USnJ0N1JONGdaeHpcEC53ZVMfJjMDe3pRQ3N0/w1200'>
+                                <img class="card-img-top " src="image/吳哥遺址.png" alt="吳哥遺址">
+                                <div class="content">
+                                    柬埔寨古都 吳哥遺址
+                                </div>
+                            </a>
+                        </div>
+
+                        
                         <div class="card-body">
                             <h6 class="card-title">奉獻給印度教守護神毗濕奴的吳哥遺址坐落在盤根錯節的柬埔寨叢林中，這裡保留有從9世紀到15世紀時高棉帝國首都的遺跡，而遺址中最著名的風景便是「吳哥的微笑」。塔廟高低林立、層次井然，青灰砂岩上苔痕斑斑，四面綻放著佛陀的微笑面容、祥和而沉靜，毋需隻字片語便道盡數百年來的滄桑風景。同時吳哥遺址於1992年宣布列入世界文化遺產，因先前戰爭造成的破壞與竊盜使國際修繕團隊進駐吳哥遺址，至今仍持續修護中。</h6>
                         </div>
@@ -103,9 +148,15 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/大堡礁.png" alt="大堡礁">
-                        </a>
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hMmbn0wOlEkJfFzmQSyBtFWVBES1sewFBOyFDQRx5THYndFEUa3Zcd3NCHCYhdVUcMSVfIXIQCXMicFURYnVc/w1200'>
+                                <img class="card-img-top box-shadow" src="image/大堡礁.png" alt="大堡礁">
+                                <div class="content">
+                                    澳大利亞 大堡礁
+                                </div>
+                            </a>
+                        </div>
+
                         
                         <div class="card-body">
                             <h6 class="card-title">大堡礁位於昆士蘭海岸外，是世界上最大的珊瑚礁系統。由2900多個單獨的珊瑚礁和900個島嶼組成，其綿延2600多公里、在太空中都可以看到。許多人會搭著遊船欣賞著船下連綿不斷、多形多彩的珊瑚景色，成為世界各地遊客來獵奇觀賞的最佳海底奇觀。因其造就了豐富的生物多樣性，而在1981年被列入世界自然遺產名錄，也曾被CNN選為世界七大自然奇觀。但從1985年開始到現在，脆弱的生態系統已經失去了一半珊瑚，包括氣候變化導致水溫上升、引起珊瑚白化死亡甚至是環境污染等問題，除了欣賞大自然的不可思議外更應該正視這些環境議題!</h6>
@@ -114,9 +165,15 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/冰河國家公園.png" alt="冰河國家公園">
-                        </a>
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hKs_sRF_IFFxiCj-OdgxrC1hcFzNRZgdfBjxFXyFkSmgaaVcKVmhbaU4JTmQcbVMCDDhZOEcPD20fbVMPX2lb/w1200'>
+                                <img class="card-img-top box-shadow" src="image/冰河國家公園.png" alt="冰河國家公園">
+                                <div class="content">
+                                    阿根廷 冰河國家公園
+                                </div>
+                            </a>
+                        </div>
+
                         
                         <div class="card-body">
                             <h6 class="card-title">這個風景如畫的南部巴塔哥尼亞公園包圍著南極洲外層最大的冰雪地幔、與智利接壤，是世界上觀察冰川活動最佳境地。冰河國家公園有多條大的冰河，其中，將阿根廷湖隔開成兩半的莫雷諾冰河最為壯觀。Perito Mereno擁有著漂亮的藍色冰塊，是阿根廷最受歡迎的旅遊勝地之一。遊客們可以從阿根廷湖上的小船或陸地上的三個觀景區觀看冰川。莫雷諾冰河目前還在不斷生成，每天都向常溫地帶推進30厘米。然而，由於氣候暖化的影響和冰舌推進至湖面的常溫地帶，導致冰河的融化速率逐漸加快，時常發生冰河崩塌的現象，因此可以聽到冰塊落入湖中的震撼轟隆聲</h6>
@@ -125,9 +182,15 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/黃石國家公園.png" alt="黃石國家公園">
-                        </a>
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hiOWibODyNmBqEB2yfslJN1BGNQ9ZfCVjDiZnYyl-aFQSc3U2Xn8tVUYTaAJGKXE-BCJ7DkgTLVEXd3EzV3At/w1200'>
+                                <img class="card-img-top box-shadow" src="image/黃石國家公園.png" alt="黃石國家公園">
+                                <div class="content">
+                                    美國  黃石國家公園
+                                </div>
+                            </a>
+                        </div>
+
                         
                         <div class="card-body">
                             <h6 class="card-title">黃石國家公園位於美國懷俄明州，是《國家地理》雜誌評選出的「死前必去」的景點之一，作為世界上面積最大的國家公園，更是世界國家公園的代表！黃石國家公園成立於1872年，公園有廣闊的地熱能區，有許多溫泉和間歇泉。</h6>
@@ -136,9 +199,15 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/加拉巴哥群島.png" alt="加拉巴哥群島">
-                        </a>
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hTQsW_q46C35OLiCsWhB0KXR4CBF9Qhh9KhhafQ1AVUo2TUgoek9MS2IoVUhnHkwgIBxGHGItEE8zSUwtc0xM/w1200'>
+                                <img class="card-img-top box-shadow" src="image/加拉巴哥群島.png" alt="加拉巴哥群島">
+                                <div class="content">
+                                    厄瓜多  加拉巴哥群島
+                                </div>
+                            </a>
+                        </div>
+
                         
                         <div class="card-body">
                             <h6 class="card-title">加拉帕戈斯群島及其周圍海域是國家公園和生物海洋保護區，這些島嶼因其大量的特有物種而聞名於世，因此被稱為「世界最大的自然博物館」。並且啟發達爾文，使他對物種的真正起源重新深思，對於日後撰寫自然進化論提供了很大的幫助。
@@ -149,9 +218,15 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/克久拉霍古蹟.png" alt="克久拉霍古蹟">
-                        </a>
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hSZ3VF-6cDHUOLyenGsJzIjR5Dxo9Qx92ahlddk1BUkF2TE8jOhoTQCIvBhF2GUsrYB1GFi4vF0RzSEsmMxkT/w1200'>
+                                <img class="card-img-top box-shadow" src="image/克久拉霍古蹟.png" alt="克久拉霍古蹟">
+                                <div class="content">
+                                    印度 克久拉霍古蹟
+                                </div>
+                            </a>
+                        </div>
+
                         
                         <div class="card-body">
                             <h6 class="card-title">克久拉霍位於印度中央邦北部的本德爾坎德，建於公元950年一百年期間，直至19世紀才再次重現世人的目光下。印度的性愛雕塑中最能引起人們興趣的地方在於它與宗教有著非常緊密的聯繫，所以是完全公開的。任何一個走近克久拉霍神廟的人都會立即注意到對神和人的性活動的頌揚是其建造者的信仰體系的核心。巨大塔樓的外表裝飾著石制的神祇雕像，雕刻的手法精湛、栩栩如生，極其生動的反映了印度教對人類本性的寬容與豁達。克久拉霍古蹟組群於1986年被列入世界文化遺產，也是世界文化遺產中較具特色的地方。</h6>
@@ -160,10 +235,15 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/伊瓜蘇國家公園.png" alt="伊瓜蘇國家公園">
-                        </a>
-                        
+
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hEG24xB89GmgPTTG6G7JlPzUbGQc8IQlra3tLa0wjRFx3Llk-O3tcXSMfRloreV02YX9QDSNNAVlyKl07MiNc/w1200'>
+                                <img class="card-img-top box-shadow" src="image/伊瓜蘇國家公園.png" alt="伊瓜蘇國家公園">
+                                <div class="content">
+                                    巴西 伊瓜蘇國家公園
+                                </div>
+                            </a>
+                        </div>                        
                         <div class="card-body">
                             <h6 class="card-title">伊瓜蘇大瀑布位於阿根廷和巴西交界處，是世界三大瀑布之一，壯觀的瀑布形成了直徑近300米、高80米的阿根廷和巴西的半圓形邊界，是一個來到南美洲大家最不能錯過的景點、也是「世界新七大自然奇景」之一!這裡有著豐富的野生動物：彩翼蝴蝶、凱門鱷、美洲虎及長鼻浣熊，與瀑布和亞熱帶雨林交相輝映，形成了和諧寧靜的大自然氛圍，天氣好時隨時都能看到耀眼的彩虹。而其中“惡魔的喉嚨 Devil’s Throat”是最令人驚嘆的景點，不僅是整個伊瓜蘇中最大的瀑布、也是分開阿根廷與巴西國界的峽谷，連前美國總統夫人都對此讚不絕口呢!
 
@@ -173,15 +253,22 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <a target='_blank' href='https://today.line.me/tw/v2/article/zBzL15'>
-                            <img class="card-img-top" src="image/吉薩金字塔群.png" alt="埃及 吉薩金字塔群">
-                        </a>
+                        <div class="box-shadow">
+                            <a target='_blank' href='https://today-obs.line-scdn.net/0hWVoR8DaVCHlSKyOrRhR3Lmh9CxZhRxt6Nh1ZehFFVk0qSEsvZkpOTH58UUp3TE8nPBlFG3EsE0gvTE8qb0lO/w1200'>
+                                <img class="card-img-top box-shadow" src="image/吉薩金字塔群.png" alt="埃及 吉薩金字塔群">
+                                <div class="content">
+                                    埃及 吉薩金字塔群
+                                </div>
+                            </a>
+                        </div> 
+
                         
                         <div class="card-body">
                             <h6 class="card-title">吉薩金字塔群是指一大片位在埃及開羅郊區的吉薩高原內之陵墓群，於1979年登入聯合國教科文組織世界遺產，同時也是「世界新七大奇蹟」之一。陵墓群建於埃及第四王朝，主要由三個金字塔組成，距今已有四千五百多年的歷史。而當中最大的是胡夫金字塔，同時也是古代世界七大奇蹟中最古老及唯一尚存的建築物，現在旁邊還設立了太陽船博物館。除了金字塔外還有雄偉壯觀的獅身人面像，為考古學家一窺世界上最引人入勝的文明提供了機會、也是探訪埃及古文明的最佳去處，到了那裏千灣不要忘記順道騎乘駱駝體驗當地文化喔!</h6>
                         </div>
                     </div>
-                </div>
+                </div>  
+
             </div>
 
 
@@ -191,18 +278,20 @@
 
         </div>
         <div id="reg" class='row row-cols-1 row-cols-sm-1 row-cols-md-2 text-center'>
-            <div class="col va" >
+            <div class="col" >
                 <h1><b>貼心服務</b></h1>
                 <h4>請填寫資料，我們樂意為您服務</h4><br>
             </div>
             <div class="col">
                 <form action="#" method="post">
+
+                  
                     <div class='row mb-3'>
                         <div class='col-7'>
                             <input type="text" id="usr_name" placeholder="姓名" class='form-control' />
                         </div>
-                        <div class='col-5 va'>
-                            <div class="form-check form-check-inline">
+                        <div class='col-5 '>
+                            <div class="form-check form-check-inline ">
                                 <input class="form-check-input" type="radio" name="usr_gender" id="usr_male" value="option1" checked>
                                 <label class="form-check-label" for="usr_male">先生</label>
                             </div>
